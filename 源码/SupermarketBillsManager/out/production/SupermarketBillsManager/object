@@ -1,0 +1,10 @@
+TransAction=com.njwb.transaction.impl.TransActionImpl
+UserDao=com.njwb.dao.impl.UserDaoImpl
+UserService=com.njwb.service.impl.UserServiceImpl
+User=com.njwb.entity.User
+SupplierDao=com.njwb.dao.impl.SupplierDaoImpl
+SupplierService=com.njwb.service.impl.SupplierServiceImpl
+Supplier=com.njwb.entity.Supplier
+AccountDao=com.njwb.dao.impl.AccountDaoImpl
+AccountService=com.njwb.service.impl.AccountServiceImpl
+Account=com.njwb.entity.Account

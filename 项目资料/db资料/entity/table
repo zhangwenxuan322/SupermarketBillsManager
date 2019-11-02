@@ -1,0 +1,38 @@
+creat database bean;
+use bean;
+creat table t_userbean (
+	u_id int primary key auto_increment,
+	u_name varchar(20),
+	u_password varchar(20),
+	u_gender varchar(20),
+	u_age int,
+	u_phone varchar(20),
+	u_address varchar(20),
+	u_auth varchar(20)
+	);
+用户:auth权限
+creat table t_accountbean(
+	a_id int primary key auto_increment,
+	a_name varchar(20),
+	a_nums int,
+	a_amount float;
+	a_unit varchar(20),
+	a_ispayed int,
+	s_id int,
+	s_name varchar(20),
+	a_Info varchar(20),
+	a_Date date,
+	constraint fk_s_id foreign key (s_id) references t_supplierbean(s_id)
+	);
+账单：账单编号，商品名称，商品数量，交易金额，交易单位，是否付款，供应商id，供应商名称，描述，账单时间
+供应商表和账单表有主外键关系，通过sid关联，主表：供应商，外键表：账单表
+creat table t_supplierbean(
+	s_id int primary key auto_increment,
+	s_name varchar(20),
+	s_info varch(20),
+	s_linkman varchar(20),
+	s_phone varchar(20),
+	s_address varchar(20),
+	s_faxes varchar(20)	
+);
+供应商:info描述，linkman联系人，faxes传真
